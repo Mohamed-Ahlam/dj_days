@@ -167,6 +167,8 @@ body{
 
     top:50%;
 
+    color: black;
+
 }
 
 .card-container{
@@ -192,14 +194,17 @@ body{
 }
 
 .card{
-    width: 225px;
+    width: 200px;
     overflow: hidden;
     border-radius: 20px;
 
     /* box-shadow: 0px 2px 4px rgba(0,0,0,0,2); */
     margin:20px;
 
- 
+    border: 4px solid rgb(177, 196, 248);
+
+    background-color: rgb(177, 196, 248);  
+
 }
 
 .card img{
@@ -211,21 +216,25 @@ body{
     /* 100% of the div that its in */
     width:100%;
     height:auto;
+
+    border-radius: 10%;
     
 }
 .card-content{
     /* add width:100%  */
-    padding: 16px;    
+    padding: 10px; 
+    text-align: center;
+    white-space: wrap;
 }
 
 .card-content h3{
-    font-size: 10px;
+    font-size: 18px;
     margin-bottom: 8px;
 }
 
 .card-content p{
-    font-size: 10px;
-    line-height: 1.3;
+    font-size: 15px;
+
 }
 
                     /* footer section */
