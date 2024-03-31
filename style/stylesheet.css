@@ -1,0 +1,233 @@
+/* 
+grid-container
+
+ 1   header-section
+ 2   library-section
+            library-header
+            main-nav
+ 3   main-section
+ 4   footer-section
+ 
+
+ grid
+ 2D
+
+ flex
+ make a box
+ use width and hieght to control box size
+*/
+
+.section{
+    border: 4px solid blue;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+    width: 1440px;
+    height: 1024px;
+
+    /* background-color: #2F5233; */
+    font-weight:900;
+    color: aliceblue;
+
+    background-image: linear-gradient(to bottom right, rgb(23, 11, 88), rgb(39, 22, 97),rgb(79, 62, 135), rgb(155, 136, 215));
+
+}
+
+.grid-container{
+    display: grid;
+    width: 100%;
+    height: auto;
+
+    grid-template-columns: 265px 1170px;
+    grid-template-rows: 148px 716px 90px;
+}
+
+
+                    /* header section */
+.header-section{
+    /* width: 1168px;
+    height: 148px; */
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+/* get from w3s for the comments of what each mean */
+    /* background-color: #f1f1f1;  
+    padding: 0;  
+    color: black;
+    text-align: center; 
+    font-size:10px;  
+    font-weight: bold;
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    transition: 0.2s;  */
+}
+
+ /* library section  */
+
+    /*  ppic  */
+    .library-section{
+
+
+        /* width:264px;
+        height:864px; */
+
+        grid-column: 1/2;
+        grid-row: 1/3;
+
+        justify-content:center;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+
+        display:flex;
+        flex-direction: column;
+
+
+        position: fixed; /* Fixed position - BUT u have to move the position bottom=0 and left=0*/
+        left: 0;
+    }
+
+    #library-header{
+        align-self: center;}
+
+    #ppic{
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+    }
+
+
+    /* nav 
+
+    Main-nav
+        Nav
+        Ul
+        Li  
+        a
+    */
+
+    #main-nav ul{
+        list-style-type: none;
+        text-decoration: none; 
+        padding: 0;
+    }
+
+    #main-nav li {
+        padding: 20px; 
+        list-style-position: inside;
+        
+    }
+
+    #main-nav li:hover{
+        background-color: #d1ebe2; 
+        border-radius: 20px; 
+        box-shadow: 0 0 10px rgba(238, 223, 8, 0.1); 
+        
+    }
+
+    #main-nav a{
+        text-decoration: none; 
+        font-weight: 900;
+        font-size: 13px;
+        color: aliceblue;
+        letter-spacing: .2rem;
+    }
+    #main-nav a:hover{
+        /* when hover over border it doesnt make txt black */
+        color:black;}
+    
+
+                    /* main section */
+.main-section{
+    /* width: 1000px;
+    height: 716px; */
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    overflow: scroll;
+
+}
+
+.card-container{
+    /* overflow:hidden - img not be perfectly fitted, so it cuts off the outside extra */
+    /* positon: absolute - child containte be positioned abso in parent */
+/* 
+    width: 360px;
+    height: 500px;
+    overflow: hidden;
+     */
+
+    /* width: 100%; */
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+    /* position  DOESNT ALLOW overflow:scroll to work */
+    /* position: absolute; */
+    overflow: scroll;
+    
+}
+
+.card{
+    width: 325px;
+    overflow: hidden;
+    border-radius: 20px;
+
+    box-shadow: 0px 2px 4px rgba(0,0,0,0,2);
+    margin:20px;
+
+ 
+}
+
+.card img{
+    /* position: absolute;
+    top:0;
+    left:0;
+    object-fit: cover; */
+
+    /* 100% of the div that its in */
+    width:100%;
+    height:auto;
+    
+}
+.card-content{
+    /* add width:100%  */
+    padding: 16px;    
+}
+
+.card-content h3{
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+.card-content p{
+    font-size: 10px;
+    line-height: 1.3;
+}
+
+                    /* footer section */
+
+.footer-section{
+    /* width: 1440px;
+    height: 90px; */
+
+    grid-column: span 3;
+    grid-row: 3/4;
+
+   position: fixed; /* Fixed position - BUT u have to move the position bottom=0 and left=0*/
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+footer button{
+    border: 20px solid green;
+}
