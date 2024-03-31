@@ -25,7 +25,7 @@ body{
     padding: 0;
 
     width: 1440px;
-    height: 1024px;
+    height: 800px;
 
     /* background-color: #2F5233; */
     font-weight:900;
@@ -42,6 +42,7 @@ body{
 
     grid-template-columns: 265px 1170px;
     grid-template-rows: 148px 716px 90px;
+    position: fixed;
 }
 
 
@@ -52,6 +53,14 @@ body{
 
     grid-column: 2/3;
     grid-row: 1/2;
+    
+    width: 100%;
+
+     /*kind of a Fixed position - BUT also relative depending on scroll*/
+    position: sticky;
+    
+    
+
 
 /* get from w3s for the comments of what each mean */
     /* background-color: #f1f1f1;  
@@ -87,7 +96,8 @@ body{
         flex-direction: column;
 
 
-        position: fixed; /* Fixed position - BUT u have to move the position bottom=0 and left=0*/
+        /*kind of a Fixed position - BUT also relative depending on scroll*/
+        position: sticky;
         left: 0;
     }
 
@@ -149,6 +159,11 @@ body{
     grid-row: 2/3;
 
     overflow: scroll;
+
+    width: 100%;
+    height:100%;
+
+    top:50%;
 
 }
 
@@ -220,8 +235,8 @@ body{
     grid-column: span 3;
     grid-row: 3/4;
 
-   position: fixed; /* Fixed position - BUT u have to move the position bottom=0 and left=0*/
-   left: 0;
+   /*kind of a Fixed position - BUT also relative depending on scroll*/
+   position: sticky;
    bottom: 0;
    width: 100%;
    background-color: red;
