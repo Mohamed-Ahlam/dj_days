@@ -17,9 +17,16 @@
     <!-- icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- g -->
+    <!-- search, play, backword, forward -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> -->
 </head>
 <body>
     
@@ -161,9 +168,44 @@
         
         </div>
         
-        <!-- has the currently playing song -->
+        <!-- footer - has the currently playing song -->
         <footer class="section footer-section">
-            <button type="submit">PLAY BUTTON</button>
+
+            <div id="currently-playing-album">
+                <img src="images/kill-bill.jpg" alt="currently playing album"></div>
+            
+            
+                <div class="push-right" >
+                <p id="show-playing-album">S.O.S</p> 
+                <p id="show-playing-artist">SZA</p>
+                </div>
+
+                
+
+            <!-- <div class="skip_previous">
+                <button class="material-symbols-outlined">skip_previous</button>
+            </div> -->
+
+            
+            <div>
+                <button id="play-btn" class="material-symbols-outlined ">play_circle</button>
+            </div>
+
+            <div >
+                <button id="pause-btn" class="material-symbols-outlined ">pause_circle</button>
+            </div>
+
+            <!-- <div class="skip_next">
+                <button class="material-symbols-outlined">skip_next</button>
+            </div> -->
+
+            
+
+            <!-- playbar -->
+
+            <div class="playbar push-right">
+                <span style="width:5%"></span>
+            </div>
         </footer>
     
     </div>
