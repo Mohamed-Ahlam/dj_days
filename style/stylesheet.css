@@ -41,48 +41,88 @@ body{
     height: auto;
 
     grid-template-columns: 265px 1170px;
-    grid-template-rows: 148px 560px 90px;
-    position: fixed;
+    grid-template-rows: 148px 532px 110px;
+
+    /* DO I NEED THIS?? IT DOES NOTHIGN  */
+    /* position: fixed; */
 }
 
 
                     /* header section */
-.header-section{
-    /* width: 1168px;
-    height: 148px; */
 
+
+.header-section h1{
+    align-self: center;
+}
+.header-section{
     grid-column: 2/3;
     grid-row: 1/2;
-    
-    width: 100%;
+    /* width: 100%; do i need to set width???*/
+
+    display: flex;
+    flex-direction: column;
 
      /*kind of a Fixed position - BUT also relative depending on scroll*/
-    position: sticky;
+    /* position: sticky; */
     
-    border-bottom: 1px solid rgb(20, 17, 17);
 
-
-/* get from w3s for the comments of what each mean */
-    /* background-color: #f1f1f1;  
-    padding: 0;  
-    color: black;
-    text-align: center; 
-    font-size:10px;  
-    font-weight: bold;
-    position: fixed; 
-    top: 0;
-    width: 100%; 
-    transition: 0.2s;  */
+    border-bottom: 2px solid blueviolet;
 }
+
+ /* add HOME and a serch Bar  */
+
+ .search{
+    align-self: center;
+    /* creates a variable and now u can use it everywhere */
+    --padding: 14px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    
+
+    padding: var(--padding);
+    border-radius: 28px;
+    background:  #3e3d3d;
+
+    width: 600px;
+
+    /* when user hovers over searchbar it transitions to a dark color */
+    transition: background 0.25s;
+
+ }
+
+ /* when user hovers over searchbar it transitions to a dark color */
+ .search:focus-within{
+    background-color: #555252;
+ }
+
+ .search-input{
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    color:#333333;
+    margin-left: var(--padding);
+
+    outline: none;
+    border: none;
+    background: transparent;
+    
+    flex:1;
+
+    color:white;
+
+    align-items: center;
+
+ }
+ /* the placeholder and icon is same color as background */
+ .search-input::placeholder, .search-icon{
+    color:rgba(0, 0, 0, 0.5);
+ }
+
 
  /* library section  */
 
     /*  ppic  */
     .library-section{
-
-        /* width:264px;
-        height:864px; */
-
         grid-column: 1/2;
         grid-row: 1/3;
 
@@ -155,8 +195,6 @@ body{
 
                     /* main section */
 .main-section{
-    /* width: 1000px;
-    height: 716px; */
     grid-column: 2/3;
     grid-row: 2/3;
 
@@ -172,14 +210,6 @@ body{
 }
 
 .card-container{
-    /* overflow:hidden - img not be perfectly fitted, so it cuts off the outside extra */
-    /* positon: absolute - child containte be positioned abso in parent */
-/* 
-    width: 360px;
-    height: 500px;
-    overflow: hidden;
-     */
-
     /* width: 100%; */
 
     display: flex;
@@ -208,11 +238,6 @@ body{
 }
 
 .card img{
-    /* position: absolute;
-    top:0;
-    left:0;
-    object-fit: cover; */
-
     /* 100% of the div that its in */
     width:100%;
     height:auto;
@@ -240,9 +265,6 @@ body{
                     /* footer section */
 
 .footer-section{
-    /* width: 1440px;
-    height: 90px; */
-
     grid-column: span 3;
     grid-row: 3/4;
 
