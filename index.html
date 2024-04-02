@@ -48,17 +48,17 @@
             <div id="main-nav">
                 <nav>
                     <ul>
-                        <li><i class="material-icons" style="font-size:36px;">cloud</i><a href="#">Your Albums</a></li>
+                        <li><i class="material-icons" style="font-size:36px;">cloud</i><a href="#">Albums</a></li>
                         <li><a href="#">Add</a></li>
-                        <li><a href="#">Now Playing</a></li>
+                        <li><a href="#">Playing</a></li>
                     </ul>
 
                     <br>
 
                     <ul>
-                        <li><a href="#">Discover music</a></li>
+                        <li><a href="#">Discover</a></li>
                         <li><a href="#">Browse</a></li>
-                        <li><a href="#">My Favorites</a></li>
+                        <li><a href="#">Favorites</a></li>
                     </ul>                    
                 </nav>
             </div>
@@ -80,7 +80,7 @@
         <div class="section main-section">
  
         <div class="card-container">
-
+<!-- 
             <div class="card">
                 <img src="images/kill-bill.jpg" alt="SZA Album">
                 <div class="card-content">
@@ -160,11 +160,56 @@
                     <h3>The Greater Wings</h3>
                     <p>Julie Byrne</p>
                 </div>
-            </div>
+            </div> -->
 
         </div>
-          
+        
+        <!-- adding album card -->
+        <div class="card-container">
 
+            <div class="card">
+                <div class="card-content">
+        
+                <h3>Add Inventory: </h3>
+                <!-- <form> -->
+                    <label for="add_artist_name">Artist Name</label>
+                    <input type="text" id="add_artist_name" required minlength="2">
+        
+                    <label for="add_album_name">Album Name</label>
+                    <input type="text" id="add_album_name" required minlength="2">
+        
+        
+                    <!-- <p>Please select the Genra:</p>
+                    <label for="add_genra_category">
+                    <input type="radio" id="add_genra_category" name="item" value="R&B">R&B
+                    </label><br>
+        
+                    <label for="add_genra_category">
+                    <input type="radio" id="add_genra_category" name="item" value="Pop">Pop
+                    </label><br>
+        
+                    <label for="add_genra_category">
+                    <input type="radio" id="add_genra_category" name="item" value="Rap">Rap
+                    </label><br> <br> -->
+        
+                    <br>
+           
+                    <label for="add_coverart_url">Add Coverart URL</label>
+                    <input type="url" id="add_coverart_url" name="add_coverart_url"><br>
+        
+                    <br>
+                    <br>
+                    <br>
+        
+                    <div >
+                    <button type="submit" id="add_album_btn">ADD</button>
+                    </div>
+                <!-- </form>  idkw form doesnt work when i add it-->
+            </div>
+            </div>
+        
+        
+        </div>
         
         </div>
         
@@ -200,9 +245,7 @@
             </div> -->
 
             
-
             <!-- playbar -->
-
             <div class="playbar push-right">
                 <span style="width:5%"></span>
             </div>

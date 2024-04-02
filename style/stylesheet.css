@@ -173,12 +173,14 @@ body{
         
     }
 
+    /* dont need this bc i did this to a not li */
+/* 
     #main-nav li:hover{
         background-color: #d1ebe2; 
         border-radius: 20px; 
         box-shadow: 0 0 10px rgba(238, 223, 8, 0.1); 
         
-    }
+    } */
 
     #main-nav a{
         text-decoration: none; 
@@ -186,10 +188,23 @@ body{
         font-size: 13px;
         color: aliceblue;
         letter-spacing: .2rem;
+
+        padding-right: 40px;
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        margin-left: auto;
+        margin-right: auto;
     }
     #main-nav a:hover{
-        /* when hover over border it doesnt make txt black */
-        color:black;}
+        /* when hover over words it does... */
+        color:black;
+        background-color: #d1ebe2; 
+        border-radius: 20px; 
+        box-shadow: 0 0 10px rgba(238, 223, 8, 0.1); 
+        font-size: 16px;
+    }
     
 
                     /* main section */
