@@ -5,8 +5,8 @@ Welcome to **DJ Days**, a dynamic single-webpage application designed to bring m
 ## Features
 
 - **Now Playing Display**: The top section of the app showcases the album that is currently playing, displaying its cover art, title, and artist.
-- **Album List**: A comprehensive list of all albums available in your collection. Users can scroll through and select any album to play next.
-- **Add New Album**: Users can add new albums to the list by entering the album's details, including its title, artist, genre, and cover art URL.
+<!-- - **Album List**: A comprehensive list of all albums available in your collection. Users can scroll through and select any album to play next. -->
+<!-- - **Add New Album**: Users can add new albums to the list by entering the album's details, including its title, artist, genre, and cover art URL. -->
 - **Dynamic Selection**: Click on any album from the list to make it the "now playing" album, updating the display automatically
 - **Library Stock Check**: 
     - If there are less than 10 albums: show a message to say you need more albums to play a full set

@@ -66,6 +66,7 @@ body{
     
 
     border-bottom: 2px solid blueviolet;
+    border-bottom-left-radius: 30%;
 }
 
  /* add HOME and a serch Bar  */
