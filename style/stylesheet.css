@@ -7,19 +7,8 @@ grid-container
             main-nav
  3   main-section
  4   footer-section
+ */
  
-
- grid
- 2D
-
- flex
- make a box
- use width and hieght to control box size
-*/
-
-/* .section{
-    border-left: 1px solid rgb(70, 70, 70);
-} */
 body{
     margin: 0;
     padding: 0;
