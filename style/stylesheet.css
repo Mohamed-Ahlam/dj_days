@@ -57,6 +57,9 @@ body{
 
     border-bottom: 2px solid blueviolet;
     border-bottom-left-radius: 30%;
+
+    background-image: url('https://i.pinimg.com/564x/18/e7/9f/18e79f142eef435b64f16eb672a8f2ed.jpg');
+    background-size: cover;
 }
 
  /* add HOME and a serch Bar  */
