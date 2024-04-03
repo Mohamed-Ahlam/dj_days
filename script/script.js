@@ -25,8 +25,33 @@ class AddAlbum{
 let playingAlbum = [];
 
 function showPlayingAlbum(name, album, coverart){
-    console.log(coverart)
+    // console.log(coverart);
+
+    // show album
+    let displayAlbum = document.getElementById('show-playing-album'); 
+    displayAlbum.innerHTML = '';
+    const showAlbum = document.createElement('p');
+    showAlbum.textContent = `${album}`;
+    displayAlbum.appendChild( showAlbum);
+
+    //show name
+    let displayName = document.getElementById('show-playing-artist'); 
+    displayName.innerHTML = '';
+    const showName = document.createElement('p');
+    showName.textContent = `${name}`;
+    displayName.appendChild( showName);
+
+    //show image
+    let img = document.getElementById('currently-playing-album-CA'); 
+    img.innerHTML = '';
+    // Create image element
+    let dynamicImage = document.createElement('img');
+    // Initialize the image source
+    dynamicImage.src  = coverart;
+    // Add image to DOM
+    img.appendChild(dynamicImage);
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -36,8 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
         albumList.map((data)=>{
             
             cardContainer.innerHTML +=`
-            <div class="card">
-            <img src= ${data.coverart} alt=${data.album} onclick="showPlayingAlbum('${data.name}', '${data.album}', '${data.coverart}')">
+            <div class="card" onclick="showPlayingAlbum('${data.name}', '${data.album}', '${data.coverart}')">
+            <img src= ${data.coverart} alt=${data.album} >
             <div class="card-content">
                 <h3>${data.album}</h3>
                 <p>${data.name}</p>
@@ -47,6 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
     postMethod();
+
+
 
     document.getElementById('add_album_btn').onclick = () => {
         const artistName = document.getElementById('add_artist_name').value;

@@ -308,13 +308,14 @@ body{
     gap:10px;
     align-items: center;
     justify-content: center;
+
 }
 /* how to select all children of footersection - u dont need to make a class */
 /* .footer-section > *{
     outline: 4px solid black;
 } */
 
-#currently-playing-album img{
+#currently-playing-album-CA img{
     width: 80px;
     height: 80px;
     border-radius: 100%;
@@ -325,6 +326,12 @@ body{
 
     margin-left: 40px;
 }
+
+/* fix this so that text wraps !!!!*/
+/* #show-playing-album{
+    overflow: hidden;
+    text-wrap: wrap;
+} */
 
 .playbar{
     
