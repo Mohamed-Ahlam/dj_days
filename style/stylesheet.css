@@ -176,7 +176,7 @@ body{
     #main-nav a{
         text-decoration: none; 
         font-weight: 900;
-        font-size: 13px;
+        font-size: 15px;
         color: aliceblue;
         letter-spacing: .2rem;
 
@@ -356,7 +356,7 @@ body{
     border-bottom-right-radius: 8px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: rgb(43,194,83);
+    background-color: rgb(255, 255, 255);
     position: relative;
     overflow: hidden;
 
@@ -367,4 +367,12 @@ body{
 @keyframes playing{
     0% {width: 0%;}
   100% {width: 100%;}
+}
+
+#play-btn{
+    font-size: 40px;
+}
+
+#pause-btn{
+    font-size: 40px;
 }
