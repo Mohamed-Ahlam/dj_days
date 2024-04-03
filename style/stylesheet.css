@@ -8,7 +8,7 @@ grid-container
  3   main-section
  4   footer-section
  */
- 
+
 body{
     margin: 0;
     padding: 0;
@@ -20,6 +20,7 @@ body{
     color: aliceblue;
 
     background-image: linear-gradient(to bottom right, rgb(23, 11, 88), rgb(45, 29, 100),rgb(100, 88, 142), rgb(237, 235, 244));
+    
 
 }
 
@@ -243,17 +244,36 @@ body{
 
 .card img{
     /* 100% of the div that its in */
+    margin-top: 5px;
     width:100%;
     height:auto;
 
     border-radius: 10%;
-    
 }
+
+.card:hover{
+
+    /* 
+    - card grows
+
+    - shadow 
+    */
+
+    border: 4px solid black;
+    padding: 10px;
+    box-shadow: 10px 10px 10px #c6c5c5;
+}
+
+/* .card-content:hover{
+    transform: translateY(50%);
+} */
+
 .card-content{
     /* add width:100%  */
     padding: 10px; 
     text-align: center;
     white-space: wrap;
+    margin-bottom: 0;
 }
 
 .card-content h3{
@@ -263,7 +283,7 @@ body{
 
 .card-content p{
     font-size: 15px;
-
+    
 }
 
                                /* footer section */

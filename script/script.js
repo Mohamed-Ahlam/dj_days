@@ -1,8 +1,9 @@
  //make a function that when u call it loads the JSON file
 
- let albumList = [{ name: "SZA",  album:"S.O.S",  coverart:"https://upload.wikimedia.org/wikipedia/en/2/2c/SZA_-_S.O.S.png"},
+ let albumList = [
+    { name: "SZA",  album:"S.O.S",  coverart:"https://upload.wikimedia.org/wikipedia/en/2/2c/SZA_-_S.O.S.png"},
     
-    { name: "Lana Del Rey",  album:"id you know that there’s a tunnel under Ocean Blvd",  coverart:"https://upload.wikimedia.org/wikipedia/en/4/4f/Lana_Del_Rey_-_Did_You_Know_That_There%27s_a_Tunnel_Under_Ocean_Blvd.png"},
+    { name: "Lana Del Rey",  album:"Did you know that there’s a tunnel under Ocean Blvd",  coverart:"https://upload.wikimedia.org/wikipedia/en/4/4f/Lana_Del_Rey_-_Did_You_Know_That_There%27s_a_Tunnel_Under_Ocean_Blvd.png"},
     
     { name: "Olivia Rodrigo",  album:"GUTS",  coverart:"https://upload.wikimedia.org/wikipedia/en/0/03/Olivia_Rodrigo_-_Guts.png"},
     
@@ -20,6 +21,13 @@ class AddAlbum{
     }
 }
 
+// changes based on user clicking on card
+let playingAlbum = [];
+
+function showPlayingAlbum(name, album, coverart){
+    console.log(coverart)
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const cardContainer = document.querySelector('.card-container');
@@ -29,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             cardContainer.innerHTML +=`
             <div class="card">
-            <img src= ${data.coverart} alt=${data.album}>
+            <img src= ${data.coverart} alt=${data.album} onclick="showPlayingAlbum('${data.name}', '${data.album}', '${data.coverart}')">
             <div class="card-content">
                 <h3>${data.album}</h3>
                 <p>${data.name}</p>
@@ -39,16 +47,16 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
     postMethod();
+
     document.getElementById('add_album_btn').onclick = () => {
         const artistName = document.getElementById('add_artist_name').value;
         const albumName = document.getElementById('add_album_name').value;
         const coverart = document.getElementById('add_coverart_url').value;
 
-    const newAlbum = new AddAlbum(artistName, albumName, coverart);
-    albumList.push(newAlbum);
+        const newAlbum = new AddAlbum(artistName, albumName, coverart);
+        albumList.push(newAlbum);
 
-    postMethod();
+        postMethod();
     }
-    
-
+   
 });
