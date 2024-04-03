@@ -20,8 +20,6 @@ body{
     color: aliceblue;
 
     background-image: linear-gradient(to bottom right, rgb(23, 11, 88), rgb(45, 29, 100),rgb(100, 88, 142), rgb(237, 235, 244));
-    
-
 }
 
 .grid-container{
@@ -29,8 +27,8 @@ body{
     width: 100%;
     height: auto;
 
-    grid-template-columns: 265px 1170px;
-    grid-template-rows: 148px 532px 110px;
+    grid-template-columns: 265px 1170px; 
+    grid-template-rows: 148px 532px 110px; 
 
     /* DO I NEED THIS?? IT DOES NOTHIGN  */
     /* position: fixed; */
