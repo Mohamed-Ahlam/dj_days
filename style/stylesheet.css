@@ -249,14 +249,14 @@ body{
     /* 100% of the div that its in */
     margin-top: 5px;
     width:100%;
-    height:auto;
+    /* height:auto; */
     margin:auto;
     padding: 25px 15px 10px 0px;
 
 
 
-    border-radius: 20px;
-    margin-right: 50px;
+    /* border-radius: 20px; */
+    /* margin-right: 50px; */
 }
 
 .card:hover{
@@ -267,7 +267,7 @@ body{
 
 .card-content{
     /* add width:100%  */
-    /* padding: 10px;  */
+    padding: 10px; 
     text-align: center;
     white-space: wrap;
     margin-bottom: 0;

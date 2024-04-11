@@ -30,6 +30,3 @@ git add .
 git commit -m "(Whatever message you want in here)"
 git push
 ```
-
-Sorces 
-https://www.youtube.com/watch?v=y93IeyzMjSI 
